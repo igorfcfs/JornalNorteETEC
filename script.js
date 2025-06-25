@@ -232,3 +232,52 @@ function buscarPrevisaoClima(cidade) {
             alert('Erro ao buscar previsão: ' + err.message);
         });
 }
+
+// Carrossel para .noticia-paginacao
+function setupCarrosselPaginacao(paginacaoSelector, cardSelector, cardsPerPage = 3) {
+  const paginacao = document.querySelector(paginacaoSelector);
+  const cards = Array.from(document.querySelectorAll(cardSelector));
+  if (!paginacao || cards.length === 0) return;
+
+  let currentPage = 1;
+  const totalPages = Math.ceil(cards.length / cardsPerPage);
+
+  function renderPage(page) {
+    cards.forEach((card, i) => {
+      const start = (page - 1) * cardsPerPage;
+      const end = start + cardsPerPage;
+      card.style.display = (i >= start && i < end) ? '' : 'none';
+    });
+    // Atualiza botões
+    paginacao.querySelectorAll('button').forEach((btn, idx) => {
+      btn.classList.toggle('ativo', btn.textContent == page);
+    });
+  }
+
+  paginacao.addEventListener('click', e => {
+    if (e.target.tagName === 'BUTTON') {
+      let val = e.target.textContent;
+      if (val === '→' || val === '⟶' || val === '⟩' || val === '›' || val === '>') {
+        if (currentPage < totalPages) currentPage++;
+      } else if (val === '←' || val === '⟵' || val === '⟨' || val === '‹' || val === '<') {
+        if (currentPage > 1) currentPage--;
+      } else if (!isNaN(Number(val))) {
+        currentPage = Number(val);
+      }
+      renderPage(currentPage);
+    }
+  });
+
+  renderPage(currentPage);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Veja também (noticia.html)
+  setupCarrosselPaginacao('.noticia-paginacao', '.noticia-veja-card', 3);
+  // Notícias recentes (index.html)
+  setupCarrosselPaginacao('.noticias-recentes-lista .noticias-col ul + .noticia-paginacao', '.noticias-col li', 3);
+  // Economia e Política (index.html)
+  setupCarrosselPaginacao('.economia-politica .paginacao', '.economia-politica-lista .noticia-card', 3);
+  // Banner principal (index.html)
+  setupCarrosselPaginacao('.noticia-banner .paginacao', '.noticia-banner', 1);
+});
