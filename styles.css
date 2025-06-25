@@ -480,19 +480,19 @@ main {
   box-shadow: 0 1px 6px #0001;
   margin-bottom: 36px;
 }
-.previsao-local {
+.cidade-info {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
 }
-.previsao-local span {
+.cidade-info span {
   font-size: 1.1rem;
   color: var(--verde-escuro);
   font-weight: 600;
 }
-.previsao-local h3 {
+.cidade-info h3 {
   font-size: 1.2rem;
   color: var(--verde-hover);
 }
@@ -516,7 +516,7 @@ main {
   font-size: 0.98rem;
   color: var(--cinza2);
 }
-.icone-nuvem img {
+.icone-clima img {
   width: 60px;
   height: 60px;
 }
@@ -723,4 +723,18 @@ button:hover {
   .resultados {
       flex-direction: column;
   }
+}
+
+/* Gráfico */
+.grafico-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 150px;
 }

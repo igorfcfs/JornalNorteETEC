@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Norte News</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
@@ -194,35 +195,29 @@
     </section>
 
     <section class="previsao-tempo">
-      <div class="previsao-local">
-        <span>Boa Vista</span>
-        <h3>Nublado</h3>
-        <div class="temperatura">28°C</div>
+      <div id="infoCidade" class="cidade-info">
+        <h2>Carregando...</h2>
+        <p>...</p>
+        <p>...</p>
       </div>
       <div class="previsao-info">
         <h4>Previsão do Tempo</h4>
-        <span>Sexta-feira | 30 Mar 2025</span>
-        <div class="icone-nuvem">
-          <img src="assets/icon/icone-nuvem.svg" alt="Nublado">
-        </div>
+        <span id="dataHoje">Sexta-feira | 30 Mar 2025</span>
+        <div class="icone-clima" id="iconeClima"></div>
       </div>
       <div class="previsao-grafico">
         <h5>Gráfico do tempo em horas</h5>
-        <img src="assets/img/24hrs forecast.png" alt="Gráfico do tempo">
+        <canvas id="graficoTemperatura"></canvas>
       </div>
       <div class="previsao-monte">
-        <img src="assets/img/monteroraima.png" alt="Monte Roraima">
-        <span>Monte Roraima</span>
+        <img src="assets/img/praia-ponta-negra.jpg" alt="Praia da Ponta Negra">
+        <span>Praia da Ponta Negra</span>
       </div>
-      <div class="previsao-detalhes">
-        <ul>
-          <li>Qualidade do ar: Boa</li>
-          <li>Vento: 8 km/h</li>
-          <li>Umidade: 84%</li>
-          <li>Índice UV: Baixo</li>
-        </ul>
+      <div id="detalhes" class="previsao-detalhes">
       </div>
     </section>
+      
+    <canvas id="graficoTemperatura"></canvas>
   </main>
 
   <footer class="footer">
