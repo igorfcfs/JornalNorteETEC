@@ -6,6 +6,7 @@
   <title>Norte News</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -159,6 +160,37 @@
         <button>4</button>
         <button>&rarr;</button>
       </div>
+    </section>
+
+    <section class="conversor">
+      <h2>Conversor de Moedas</h2>
+      <div class="formulario">
+          <input type="number" id="valor" placeholder="0,00" step="0.01">
+          
+          <select id="de">
+              <option value="BRL">Real (BRL)</option>
+              <option value="USD">Dólar Americano (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <!-- Adicione mais moedas conforme necessário -->
+          </select>
+
+          <button id="trocar">⇅</button>
+
+          <select id="para">
+              <option value="USD">Dólar Americano (USD)</option>
+              <option value="BRL">Real (BRL)</option>
+              <option value="EUR">Euro (EUR)</option>
+          </select>
+
+          <input type="date" id="dataCotacao" value="">
+          <button id="converter">Converter</button>
+      </div>
+
+      <h3>Resultado da conversão</h3>
+      <section class="resultados">
+          <div id="resultado-de" class="resultado"></div>
+          <div id="resultado-para" class="resultado"></div>
+      </section>
     </section>
 
     <section class="previsao-tempo">
