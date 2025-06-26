@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Norte News</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- CSS do Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- JS do Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
@@ -114,34 +118,52 @@
     </section>
 
     <section class="noticia-banner">
-      <div class="noticia-banner-carousel-externa">
-        <div class="noticia-banner-carousel-lista" id="noticiaBannerCarouselLista">
-          <div class="noticia-banner-card">
+      <section class="noticia-carousel swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide noticia-banner">
             <img src="assets/img/parana.png" alt="Ji-Paraná">
+            <span class="continuar-lendo">CONTINUAR LENDO ›</span>
+            <span class="tag">Cidades</span>
+            <span class="data">17/05/25</span>
             <div class="noticia-banner-info">
-              <span class="tag">Cidades</span>
-              <h2>Uma das cidades mais completas da região Norte, com ensino técnico e vida organizada</h2>
-              <p>Ji-Paraná, localizado no interior de Rondônia, é a segunda maior cidade do estado e uma das mais
-                importantes economicamente da região Norte.</p>
-              <button>CONTINUAR LENDO</button>
+              <h2>Uma das cidades mais completas da região Norte...</h2>
+              <p>Ji-Paraná, localizado no interior de Rondônia...</p>
             </div>
           </div>
-          <div class="noticia-banner-card">
-            <img src="assets/img/monteroraima.png" alt="Monte Roraima">
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide noticia-banner">
+            <img src="assets/img/monteroraima.png" alt="Outra Cidade">
+            <span class="continuar-lendo">CONTINUAR LENDO ›</span>
+            <span class="tag">Turismo</span>
+            <span class="data">17/05/25</span>
             <div class="noticia-banner-info">
-              <span class="tag">Turismo</span>
-              <h2>Monte Roraima: o gigante da fronteira norte do Brasil</h2>
-              <p>O Monte Roraima é um dos pontos turísticos mais impressionantes da Amazônia, atraindo aventureiros do
-                mundo todo.</p>
-              <button>CONTINUAR LENDO</button>
+              <h2>Belezas naturais escondidas no Norte do Brasil</h2>
+              <p>Descubra lugares pouco explorados com alto potencial turístico.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide noticia-banner">
+            <img src="assets/img/praia-ponta-negra.jpg" alt="Mais uma cidade">
+            <span class="continuar-lendo">CONTINUAR LENDO ›</span>
+            <span class="tag">Desenvolvimento</span>
+            <span class="data">17/05/25</span>
+            <div class="noticia-banner-info">
+              <h2>O crescimento das cidades médias no Norte</h2>
+              <p>Um retrato da urbanização longe dos grandes centros.</p>
             </div>
           </div>
         </div>
-        <div class="noticia-banner-carousel-btns">
-          <button class="noticia-banner-carousel-btn-rect left" id="noticiaBannerCarouselLeft">&#8592;</button>
-          <button class="noticia-banner-carousel-btn-rect right" id="noticiaBannerCarouselRight">&#8594;</button>
-        </div>
-      </div>
+
+        <!-- Botões de navegação -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Paginador (bolinhas) -->
+        <div class="swiper-pagination"></div>
+      </section>
     </section>
 
     <section class="economia-politica">

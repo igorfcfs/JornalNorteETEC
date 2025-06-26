@@ -169,6 +169,22 @@ function buscarClimaAtual(cidade) {
     .catch((err) => {
       alert("Erro ao buscar dados: " + err.message);
     });
+    
+    const swiper = new Swiper('.noticia-carousel', {
+        loop: true,
+        autoplay: {
+        delay: 5000, // 5000ms = 5 segundos entre os slides
+        disableOnInteraction: false, // continua passando mesmo depois de clicar ou interagir
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+    });
 }
 
 // Buscar previsão por horário
