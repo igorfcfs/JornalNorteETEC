@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- JS do Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
@@ -23,21 +22,16 @@
     </a>
     <nav class="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Cidades</a></li>
-        <li><a href="#">Cultura</a></li>
-        <li><a href="#">Meio Ambiente</a></li>
-        <li><a href="#">Economia e Política</a></li>
-        <li><a href="#">Notícias Recentes</a></li>
-        <li><a href="#">Previsão do tempo</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cultura.html">Cultura</a></li>
+        <li><a href="meio-ambiente.html">Meio Ambiente</a></li>
+        <li><a href="economia.html">Economia e Política</a></li>
+        <li><a href="recentes.html">Notícias Recentes</a></li>
+        <li><a href="#conversorMoedas">Conversor de moeda</a></li>
+        <li><a href="#previsaoTempo">Previsão do tempo</a></li>
       </ul>
     </nav>
-    <div class="search-container">
-      <input type="text" placeholder="Buscar">
-      <button>Buscar</button>
-    </div>
   </header>
-
   <main>
     <section class="noticias-recentes">
       <h1>Notícias Recentes</h1>
@@ -56,38 +50,33 @@
         </aside>
       </div>
       <div class="noticias-lista">
-        <a class="btn-continuar-lendo">CONTINUAR LENDO</a>
+        <a href="meio-ambiente/Rio-invisivel-do-Amazonas-misterio-subterraneo-intriga-cientistas.html" class="btn-continuar-lendo">CONTINUAR LENDO</a>
       </div>
     </section>
 
     <section class="categorias">
       <h2>Por Categoria</h2>
       <div class="categorias-lista">
-        <div class="categoria">
-          <img src="assets/img/cidades.png" alt="Cidades">
-          <span>CIDADES</span>
-        </div>
-        <div class="categoria">
+        <a href="cultura.html" class="categoria">
           <span>CULTURA</span>
           <img src="assets/img/cultura.png" alt="Cultura">
-        </div>
-        <div class="categoria">
+        </a>
+        <a href="economia.html" class="categoria">
           <img src="assets/img/economia.jpg" alt="Economia">
           <span>ECONOMIA</span>
-        </div>
-        <div class="categoria">
-          <span>POLÍTICA</span>
+        </a>
+        <a href="meio-ambiente.html" class="categoria">
+          <span>MEIO AMBIENTE</span>
           <img src="assets/img/politica.png" alt="Política">
-        </div>
+        </a>
       </div>
-      <div class="ver-mais"><a href="#">VER MAIS &gt;</a></div>
     </section>
 
     <section class="noticias-recentes-lista">
       <div class="noticias-col">
         <h3>Notícias Recentes</h3>
         <ul>
-          <a href="#">
+          <a href="meio-ambiente/Manaus-mais-de-300-areas-sem-agua-por-manutencao-eletrica.html">
             <li>
               <img src="assets/img/faltaagua.png" alt="Torneira">
               <div>
@@ -97,7 +86,7 @@
               </div>
             </li>
           </a>
-          <a href="#">
+          <a href="cultura/Acre-baixa-participacao-programa-rouanet-juventude.html">
             <li>
               <img src="assets/img/projetosc.png" alt="Jovens">
               <div>
@@ -107,9 +96,9 @@
               </div>
             </li>
           </a>
-          <a href="#">
+          <a href="economia/Tocantins-destaque-mundial-combate-febre-aftosa.html">
             <li>
-              <img src="assets/img/projetod.png" alt="Economia">
+              <img src="assets/img/economia.jpg" alt="Economia">
               <div>
                 <strong>Tocantins é destaque mundial no combate à febre aftosa</strong>
                 <p>Estado se destaca na erradicação da doença e conquista mercados internacionais.</p>
@@ -119,9 +108,9 @@
         </ul>
       </div>
       <div class="noticia-grande">
-        <img src="/assets/img/fundo.png" alt="Tocantins">
+        <img src="assets/img/desafia.avif" alt="Tocantins">
         <div class="noticia-grande-info">
-          <span class="tag">Cidades</span>
+          <span class="tag">Meio ambiente</span>
           <h2>Lugar Escondido No Tocantins Tem Água Que Desafia A Gravidade</h2>
           <button>CONTINUAR LENDO</button>
         </div>
@@ -179,39 +168,67 @@
 
     <section class="economia-politica">
       <h2>Economia e Política</h2>
-      <div class="economia-politica-lista">
-        <div class="noticia-card">
-          <img src="assets/img/ataquesmarina.png" alt="Acre repudia ataques">
-          <span>27/05/25</span>
-          <strong>Autoridades do Acre repudiam ataques contra ministra Marina Silva em comissão no Senado</strong>
-          <p>Em nota, autoridades destacam que Marina Silva foi interrompida, desrespeitada e alvo de insinuações
-            ofensivas.</p>
+      <div class="noticia-veja-carousel-externa">
+        <div class="noticia-veja-lista" id="economiaPoliticaCarouselLista">
+          <a href="#" class="noticia-veja-card">
+            <img src="assets/img/ataquesmarina.png" alt="Acre repudia ataques">
+            <span>27/05/25</span>
+            <strong>Autoridades do Acre repudiam ataques contra ministra Marina Silva em comissão no Senado</strong>
+            <p>Em nota, autoridades destacam que Marina Silva foi interrompida, desrespeitada e alvo de insinuações
+              ofensivas.</p>
+          </a>
+          <a href="#" class="noticia-veja-card">
+            <img src="assets/img/combustiveis.png" alt="Manaus combustíveis sustentáveis">
+            <span>29/05/25</span>
+            <strong>Manaus rumo aos combustíveis sustentáveis: Novo aterro impulsiona potencial da Amazônia</strong>
+            <p>Novo aterro em Manaus busca inserir a Amazônia na rota dos combustíveis sustentáveis.</p>
+          </a>
+          <a href="#" class="noticia-veja-card">
+            <img src="assets/img/plantacao.png" alt="Plano de carreira servidores">
+            <span>27/05/25</span>
+            <strong>Governo do RO atualiza plano de carreira da Sedam para valorizar servidores</strong>
+            <p>A lei moderniza o Plano de Carreira, Cargos e Remuneração (PCCR) dos servidores da Sedam, valorizando o
+              fortalecimento e atuação na área ambiental.</p>
+          </a>
         </div>
-        <div class="noticia-card">
-          <img src="assets/img/combustiveis.png" alt="Manaus combustíveis sustentáveis">
-          <span>29/05/25</span>
-          <strong>Manaus rumo aos combustíveis sustentáveis: Novo aterro impulsiona potencial da Amazônia</strong>
-          <p>Novo aterro em Manaus busca inserir a Amazônia na rota dos combustíveis sustentáveis.</p>
+        <div class="noticia-veja-carousel-btns">
+          <button class="noticia-veja-carousel-btn-rect left" id="economiaPoliticaCarouselLeft">&#8592;</button>
+          <button class="noticia-veja-carousel-btn-rect right" id="economiaPoliticaCarouselRight">&#8594;</button>
         </div>
-        <div class="noticia-card">
-          <img src="assets/img/plantacao.png" alt="Plano de carreira servidores">
-          <span>27/05/25</span>
-          <strong>Governo do RO atualiza plano de carreira da Sedam para valorizar servidores</strong>
-          <p>A lei moderniza o Plano de Carreira, Cargos e Remuneração (PCCR) dos servidores da Sedam, valorizando o
-            fortalecimento e atuação na área ambiental.</p>
-        </div>
-      </div>
-      <div class="paginacao">
-        <button>&larr;</button>
-        <button class="ativo">1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>&rarr;</button>
       </div>
     </section>
 
-    <section class="previsao-tempo">
+    <section class="conversor" id="conversorMoedas">
+      <h2>Conversor de Moedas</h2>
+      <div class="formulario">
+        <input type="number" id="valor" placeholder="0,00" step="0.01">
+
+        <select id="de">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+        </select>
+
+        <button id="trocar">⇅</button>
+
+        <select id="para">
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="EUR">Euro (EUR)</option>
+        </select>
+
+        <input type="date" id="dataCotacao" value="">
+        <button id="converter">Converter</button>
+      </div>
+
+      <h3>Resultado da conversão</h3>
+      <section class="resultados">
+        <div id="resultado-de" class="resultado"></div>
+        <div id="resultado-para" class="resultado"></div>
+      </section>
+    </section>
+
+    <section class="previsao-tempo" id="previsaoTempo">
       <div id="infoCidade" class="cidade-info">
         <h2>Carregando...</h2>
         <p>...</p>
@@ -233,44 +250,41 @@
       <div id="detalhes" class="previsao-detalhes">
       </div>
     </section>
-
-    <canvas id="graficoTemperatura"></canvas>
-
-    <section class="conversor">
-      <h2>Conversor de Moedas</h2>
-      <div class="formulario">
-        <input type="number" id="valor" placeholder="0,00" step="0.01">
-
-        <select id="de">
-          <option value="BRL">Real (BRL)</option>
-          <option value="USD">Dólar Americano (USD)</option>
-          <option value="EUR">Euro (EUR)</option>
-          <!-- Adicione mais moedas conforme necessário -->
-        </select>
-
-        <button id="trocar">⇅</button>
-
-        <select id="para">
-          <option value="USD">Dólar Americano (USD)</option>
-          <option value="BRL">Real (BRL)</option>
-          <option value="EUR">Euro (EUR)</option>
-        </select>
-
-        <input type="date" id="dataCotacao" value="">
-        <button id="converter">Converter</button>
-      </div>
-
-      <h3>Resultado da conversão</h3>
-      <section class="resultados">
-        <div id="resultado-de" class="resultado"></div>
-        <div id="resultado-para" class="resultado"></div>
-      </section>
-    </section>
   </main>
 
   <footer class="footer">
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Cidades</a></li>
+          <li><a href="#">Cultura</a></li>
+          <li><a href="#">Meio Ambiente</a></li>
+          <li><a href="#">Economia e Política</a></li>
+          <li><a href="#">Notícias Recentes</a></li>
+          <li><a href="#">Previsão do tempo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@nortenews.com">contato@nortenews.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
     <p>&copy; 2025 Norte News</p>
   </footer>
+
+
 </body>
 
 </html>
