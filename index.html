@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,42 +10,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <header class="header">
-    <a href="index.html"><div class="logo">Norte News</div></a>
+    <a href="index.html">
+      <div class="logo">Norte News</div>
+    </a>
     <nav class="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Cidades</a></li>
-        <li><a href="#">Cultura</a></li>
-        <li><a href="#">Meio Ambiente</a></li>
-        <li><a href="#">Economia e Política</a></li>
-        <li><a href="#">Notícias Recentes</a></li>
-        <li><a href="#">Previsão do tempo</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cultura.html">Cultura</a></li>
+        <li><a href="meio-ambiente.html">Meio Ambiente</a></li>
+        <li><a href="economia.html">Economia e Política</a></li>
+        <li><a href="recentes.html">Notícias Recentes</a></li>
+        <li><a href="#conversorMoedas">Conversor de moeda</a></li>
+        <li><a href="#previsaoTempo">Previsão do tempo</a></li>
       </ul>
     </nav>
-    <div class="search-container">
-      <input type="text" placeholder="Buscar">
-      <button>Buscar</button>
-    </div>
   </header>
-
   <main>
     <section class="noticias-recentes">
       <h1>Notícias Recentes</h1>
       <div class="noticia-destaque">
         <div class="noticia-destaque-img">
-        <div class="noticia-destaque-info">
+          <div class="noticia-destaque-info">
             <h2>O rio invisível do Amazonas: curso subterrâneo intriga cientistas a 4 mil metros de profundidade</h2>
             <p>2 horas atrás • Amazonas</p>
+          </div>
         </div>
-    </div>
-    <aside class="noticia-destaque-aside">
-        <p>O rio Amazonas, o maior corpo d’água em extensão do mundo (descontando-se antigas contradições científicas), esconde mais segredos do que se pode pensar. Um deles é a existência de um outro rio que corre nas suas profundezas: o Rio Hamza, descoberto em 2010, é um corpo d’água subterrâneo que passa pelos estados do Amazonas, Amapá e Pará, e vai desaguar do Atlântico.</p>
-    </aside>
-</div>
+        <aside class="noticia-destaque-aside">
+          <p>O rio Amazonas, o maior corpo d’água em extensão do mundo (descontando-se antigas contradições
+            científicas), esconde mais segredos do que se pode pensar. Um deles é a existência de um outro rio que corre
+            nas suas profundezas: o Rio Hamza, descoberto em 2010, é um corpo d’água subterrâneo que passa pelos estados
+            do Amazonas, Amapá e Pará, e vai desaguar do Atlântico.</p>
+        </aside>
+      </div>
       <div class="noticias-lista">
-      <a class="btn-continuar-lendo">CONTINUAR LENDO</a>
+        <a href="meio-ambiente/Rio-invisivel-do-Amazonas-misterio-subterraneo-intriga-cientistas.html" class="btn-continuar-lendo">CONTINUAR LENDO</a>
       </div>
     </section>
 
@@ -68,7 +70,6 @@
           <img src="assets/img/politica.png" alt="Política">
         </div>
       </div>
-      <div class="ver-mais"><a href="#">VER MAIS &gt;</a></div>
     </section>
 
     <section class="noticias-recentes-lista">
@@ -76,22 +77,24 @@
         <h3>Notícias Recentes</h3>
         <ul>
           <a href="noticia.html">
-          <li>
-            <img src="assets/img/faltaagua.png" alt="Torneira">
-            <div>
-              <strong>Mais de 300 áreas de Manaus ficam sem água por manutenção da rede</strong>
-              <p>Serviço de manutenção na rede de fornecimento de água afeta centenas de famílias na capital amazonense.</p>
-            </div>
-          </li>
+            <li>
+              <img src="assets/img/faltaagua.png" alt="Torneira">
+              <div>
+                <strong>Mais de 300 áreas de Manaus ficam sem água por manutenção da rede</strong>
+                <p>Serviço de manutenção na rede de fornecimento de água afeta centenas de famílias na capital
+                  amazonense.</p>
+              </div>
+            </li>
           </a>
           <a href="#">
-          <li>
-            <img src="assets/img/projetosc.png" alt="Jovens">
-            <div>
-              <strong>Com 23 projetos habilitados, Acre é um dos estados com maior participação no programa Rouanet da Juventude</strong>
-              <p>Estado investe e colhe resultados para jovens das periferias com incentivo à cultura e educação.</p>
-            </div>
-          </li>
+            <li>
+              <img src="assets/img/projetosc.png" alt="Jovens">
+              <div>
+                <strong>Com 23 projetos habilitados, Acre é um dos estados com maior participação no programa Rouanet da
+                  Juventude</strong>
+                <p>Estado investe e colhe resultados para jovens das periferias com incentivo à cultura e educação.</p>
+              </div>
+            </li>
           </a>
           <a href="#">
             <li>
@@ -105,7 +108,7 @@
         </ul>
       </div>
       <div class="noticia-grande">
-        <img src="/assets/img/fundo.png" alt="Tocantins">
+        <img src="assets/img/fundo.png" alt="Tocantins">
         <div class="noticia-grande-info">
           <span class="tag">Cidades</span>
           <h2>Lugar Escondido No Tocantins Tem Água Que Desafia A Gravidade</h2>
@@ -115,86 +118,99 @@
     </section>
 
     <section class="noticia-banner">
-      <img src="assets/img/parana.png" alt="Ji-Paraná">
-      <div class="noticia-banner-info">
-        <span class="tag">Cidades</span>
-        <h2>Uma das cidades mais completas da região Norte, com ensino técnico e vida organizada</h2>
-        <p>Ji-Paraná, localizado no interior de Rondônia, é a segunda maior cidade do estado e uma das mais importantes economicamente da região Norte.</p>
-        <div class="paginacao">
-          <button>&larr;</button>
-          <button class="ativo">1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>&rarr;</button>
+      <div class="noticia-banner-carousel-externa">
+        <div class="noticia-banner-carousel-lista" id="noticiaBannerCarouselLista">
+          <div class="noticia-banner-card">
+            <img src="assets/img/parana.png" alt="Ji-Paraná">
+            <div class="noticia-banner-info">
+              <span class="tag">Cidades</span>
+              <h2>Uma das cidades mais completas da região Norte, com ensino técnico e vida organizada</h2>
+              <p>Ji-Paraná, localizado no interior de Rondônia, é a segunda maior cidade do estado e uma das mais
+                importantes economicamente da região Norte.</p>
+              <button>CONTINUAR LENDO</button>
+            </div>
+          </div>
+          <div class="noticia-banner-card">
+            <img src="assets/img/monteroraima.png" alt="Monte Roraima">
+            <div class="noticia-banner-info">
+              <span class="tag">Turismo</span>
+              <h2>Monte Roraima: o gigante da fronteira norte do Brasil</h2>
+              <p>O Monte Roraima é um dos pontos turísticos mais impressionantes da Amazônia, atraindo aventureiros do
+                mundo todo.</p>
+              <button>CONTINUAR LENDO</button>
+            </div>
+          </div>
+        </div>
+        <div class="noticia-banner-carousel-btns">
+          <button class="noticia-banner-carousel-btn-rect left" id="noticiaBannerCarouselLeft">&#8592;</button>
+          <button class="noticia-banner-carousel-btn-rect right" id="noticiaBannerCarouselRight">&#8594;</button>
         </div>
       </div>
     </section>
 
     <section class="economia-politica">
       <h2>Economia e Política</h2>
-      <div class="economia-politica-lista">
-        <div class="noticia-card">
-          <img src="assets/img/ataquesmarina.png" alt="Acre repudia ataques">
-          <span>27/05/25</span>
-          <strong>Autoridades do Acre repudiam ataques contra ministra Marina Silva em comissão no Senado</strong>
-          <p>Em nota, autoridades destacam que Marina Silva foi interrompida, desrespeitada e alvo de insinuações ofensivas.</p>
+      <div class="noticia-veja-carousel-externa">
+        <div class="noticia-veja-lista" id="economiaPoliticaCarouselLista">
+          <a href="#" class="noticia-veja-card">
+            <img src="assets/img/ataquesmarina.png" alt="Acre repudia ataques">
+            <span>27/05/25</span>
+            <strong>Autoridades do Acre repudiam ataques contra ministra Marina Silva em comissão no Senado</strong>
+            <p>Em nota, autoridades destacam que Marina Silva foi interrompida, desrespeitada e alvo de insinuações
+              ofensivas.</p>
+          </a>
+          <a href="#" class="noticia-veja-card">
+            <img src="assets/img/combustiveis.png" alt="Manaus combustíveis sustentáveis">
+            <span>29/05/25</span>
+            <strong>Manaus rumo aos combustíveis sustentáveis: Novo aterro impulsiona potencial da Amazônia</strong>
+            <p>Novo aterro em Manaus busca inserir a Amazônia na rota dos combustíveis sustentáveis.</p>
+          </a>
+          <a href="#" class="noticia-veja-card">
+            <img src="assets/img/plantacao.png" alt="Plano de carreira servidores">
+            <span>27/05/25</span>
+            <strong>Governo do RO atualiza plano de carreira da Sedam para valorizar servidores</strong>
+            <p>A lei moderniza o Plano de Carreira, Cargos e Remuneração (PCCR) dos servidores da Sedam, valorizando o
+              fortalecimento e atuação na área ambiental.</p>
+          </a>
         </div>
-        <div class="noticia-card">
-          <img src="assets/img/combustiveis.png" alt="Manaus combustíveis sustentáveis">
-          <span>29/05/25</span>
-          <strong>Manaus rumo aos combustíveis sustentáveis: Novo aterro impulsiona potencial da Amazônia</strong>
-          <p>Novo aterro em Manaus busca inserir a Amazônia na rota dos combustíveis sustentáveis.</p>
+        <div class="noticia-veja-carousel-btns">
+          <button class="noticia-veja-carousel-btn-rect left" id="economiaPoliticaCarouselLeft">&#8592;</button>
+          <button class="noticia-veja-carousel-btn-rect right" id="economiaPoliticaCarouselRight">&#8594;</button>
         </div>
-        <div class="noticia-card">
-          <img src="assets/img/plantacao.png" alt="Plano de carreira servidores">
-          <span>27/05/25</span>
-          <strong>Governo do RO atualiza plano de carreira da Sedam para valorizar servidores</strong>
-          <p>A lei moderniza o Plano de Carreira, Cargos e Remuneração (PCCR) dos servidores da Sedam, valorizando o fortalecimento e atuação na área ambiental.</p>
-        </div>
-      </div>
-      <div class="paginacao">
-        <button>&larr;</button>
-        <button class="ativo">1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>&rarr;</button>
       </div>
     </section>
 
-    <section class="conversor">
+    <section class="conversor" id="conversorMoedas">
       <h2>Conversor de Moedas</h2>
       <div class="formulario">
-          <input type="number" id="valor" placeholder="0,00" step="0.01">
-          
-          <select id="de">
-              <option value="BRL">Real (BRL)</option>
-              <option value="USD">Dólar Americano (USD)</option>
-              <option value="EUR">Euro (EUR)</option>
-              <!-- Adicione mais moedas conforme necessário -->
-          </select>
+        <input type="number" id="valor" placeholder="0,00" step="0.01">
 
-          <button id="trocar">⇅</button>
+        <select id="de">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+        </select>
 
-          <select id="para">
-              <option value="USD">Dólar Americano (USD)</option>
-              <option value="BRL">Real (BRL)</option>
-              <option value="EUR">Euro (EUR)</option>
-          </select>
+        <button id="trocar">⇅</button>
 
-          <input type="date" id="dataCotacao" value="">
-          <button id="converter">Converter</button>
+        <select id="para">
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="EUR">Euro (EUR)</option>
+        </select>
+
+        <input type="date" id="dataCotacao" value="">
+        <button id="converter">Converter</button>
       </div>
 
       <h3>Resultado da conversão</h3>
       <section class="resultados">
-          <div id="resultado-de" class="resultado"></div>
-          <div id="resultado-para" class="resultado"></div>
+        <div id="resultado-de" class="resultado"></div>
+        <div id="resultado-para" class="resultado"></div>
       </section>
     </section>
 
-    <section class="previsao-tempo">
+    <section class="previsao-tempo" id="previsaoTempo">
       <div id="infoCidade" class="cidade-info">
         <h2>Carregando...</h2>
         <p>...</p>
@@ -216,14 +232,41 @@
       <div id="detalhes" class="previsao-detalhes">
       </div>
     </section>
-      
-    <canvas id="graficoTemperatura"></canvas>
   </main>
 
   <footer class="footer">
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Cidades</a></li>
+          <li><a href="#">Cultura</a></li>
+          <li><a href="#">Meio Ambiente</a></li>
+          <li><a href="#">Economia e Política</a></li>
+          <li><a href="#">Notícias Recentes</a></li>
+          <li><a href="#">Previsão do tempo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@nortenews.com">contato@nortenews.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
     <p>&copy; 2025 Norte News</p>
   </footer>
 
 
 </body>
+
 </html>
