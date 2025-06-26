@@ -370,45 +370,120 @@ main {
 .noticia-grande-info button:hover {
   background: var(--verde-hover-noticia);
 }
+
+
+
+/*------------- SLIDER -------------*/
 .noticia-banner {
-  margin-bottom: 36px;
+  position: relative;
+  height: 31.25rem;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 12px #0001;
-  position: relative;
-  display: flex;
-  align-items: stretch;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 36px;
 }
+
+/* Imagem de fundo ocupando tudo */
 .noticia-banner img {
-  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
+
+/* Container do conteúdo sobreposto */
 .noticia-banner-info {
-  background: linear-gradient(90deg, var(--verde-escuro) 80%, #ffffff00 100%);
-  color: var(--branco);
-  padding: 38px 32px 32px 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6); /* fundo translúcido */
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 1120px;
 }
-.noticia-banner-info .tag {
-  background: var(--verde-hover);
-  color: var(--branco);
-  font-size: 0.85rem;
-  padding: 2px 10px;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  display: inline-block;
-}
+
+/* Título */
 .noticia-banner-info h2 {
-  font-size: 1.25rem;
-  margin: 8px 0 10px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #fff;
 }
+
+/* Parágrafo */
 .noticia-banner-info p {
   font-size: 1rem;
-  margin-bottom: 18px;
+  color: #d1d5db;
+  margin: 0;
 }
+
+/* Tag da categoria */
+.noticia-banner .tag {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  z-index: 2;
+  color: #fff;
+  font-size: 1rem;
+  padding: 4px 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Data no canto inferior do card */
+.noticia-banner .data {
+  position: absolute;
+  top: 20rem;
+  left: 2.5rem;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: #d1d5db;
+}
+
+/* Botão no topo direito */
+.noticia-banner .continuar-lendo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  font-size: 0.85rem;
+  color: #f9fafb;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------*/
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Estilo dos botões do Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  z-index: 4;
+}
+
+/* Paginador do Swiper */
+.swiper-pagination {
+  z-index: 4;
+}
+
 .paginacao {
   display: flex;
   gap: 8px;
@@ -478,7 +553,6 @@ main {
   padding: 28px 24px;
   align-items: flex-start;
   box-shadow: 0 1px 6px #0001;
-  margin-bottom: 36px;
 }
 .cidade-info {
   flex: 1;
@@ -738,3 +812,4 @@ canvas {
   height: auto !important;
   max-height: 150px;
 }
+

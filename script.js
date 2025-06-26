@@ -83,7 +83,24 @@ document.addEventListener('DOMContentLoaded', () => {
     
     buscarClimaAtual(cidade);
     buscarPrevisaoClima(cidade);
+
+    const swiper = new Swiper('.noticia-carousel', {
+        loop: true,
+        autoplay: {
+        delay: 5000, // 5000ms = 5 segundos entre os slides
+        disableOnInteraction: false, // continua passando mesmo depois de clicar ou interagir
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+    });
 });
+
 
 const apiKey = '2b7416c8347545a711cbbc39289370ec';
 
