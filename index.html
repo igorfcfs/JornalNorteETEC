@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Norte News</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- CSS do Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- JS do Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -108,11 +106,10 @@
         </ul>
       </div>
       <div class="noticia-grande">
-        <img src="assets/img/desafia.avif" alt="Tocantins">
         <div class="noticia-grande-info">
           <span class="tag">Meio ambiente</span>
           <h2>Lugar Escondido No Tocantins Tem Água Que Desafia A Gravidade</h2>
-          <button>CONTINUAR LENDO</button>
+          <a href="meio-ambiente/Oasis-escondido-no-Tocantins-fervedouros-do-Jalapao.html"><button>CONTINUAR LENDO</button></a>
         </div>
       </div>
     </section>
@@ -120,76 +117,95 @@
     <section class="noticia-banner">
       <section class="noticia-carousel swiper">
         <div class="swiper-wrapper">
-          <!-- Slide 1 -->
           <div class="swiper-slide noticia-banner">
-            <img src="assets/img/parana.png" alt="Ji-Paraná">
-            <span class="continuar-lendo">CONTINUAR LENDO ›</span>
-            <span class="tag">Cidades</span>
-            <span class="data">17/05/25</span>
+            <img src="assets/img/faltaagua.png" alt="Torneira">
+            <a class="continuar-lendo" href="meio-ambiente/Manaus-mais-de-300-areas-sem-agua-por-manutencao-eletrica.html">CONTINUAR LENDO ›</a>
+            <span class="tag">Meio Ambiente</span>
             <div class="noticia-banner-info">
-              <h2>Uma das cidades mais completas da região Norte...</h2>
-              <p>Ji-Paraná, localizado no interior de Rondônia...</p>
+              <h2>Mais de 300 áreas de Manaus ficam sem água por manutenção da rede</h2>
+              <p>Serviço de manutenção na rede de fornecimento de água afeta centenas de famílias na capital amazonense.</p>
             </div>
           </div>
 
-          <!-- Slide 2 -->
           <div class="swiper-slide noticia-banner">
-            <img src="assets/img/monteroraima.png" alt="Outra Cidade">
-            <span class="continuar-lendo">CONTINUAR LENDO ›</span>
-            <span class="tag">Turismo</span>
-            <span class="data">17/05/25</span>
+            <img src="assets/img/projetosc.png" alt="Jovens">
+            <a class="continuar-lendo" href="cultura/Acre-baixa-participacao-programa-rouanet-juventude.html">CONTINUAR LENDO ›</a>
+            <span class="tag">Cultura</span>
             <div class="noticia-banner-info">
-              <h2>Belezas naturais escondidas no Norte do Brasil</h2>
-              <p>Descubra lugares pouco explorados com alto potencial turístico.</p>
+              <h2>Com 23 projetos habilitados, Acre é um dos estados com maior participação no programa Rouanet da Juventude</h2>
+              <p>Estado investe e colhe resultados para jovens das periferias com incentivo à cultura e educação.</p>
             </div>
           </div>
 
-          <!-- Slide 3 -->
           <div class="swiper-slide noticia-banner">
-            <img src="assets/img/praia-ponta-negra.jpg" alt="Mais uma cidade">
-            <span class="continuar-lendo">CONTINUAR LENDO ›</span>
-            <span class="tag">Desenvolvimento</span>
-            <span class="data">17/05/25</span>
+            <img src="assets/img/economia.jpg" alt="Economia">
+            <a href="economia/Tocantins-destaque-mundial-combate-febre-aftosa.html" class="continuar-lendo">CONTINUAR LENDO ›</a>
+            <span class="tag">Economia</span>
             <div class="noticia-banner-info">
-              <h2>O crescimento das cidades médias no Norte</h2>
-              <p>Um retrato da urbanização longe dos grandes centros.</p>
+              <h2>Tocantins é destaque mundial no combate à febre aftosa</h2>
+              <p>Estado se destaca na erradicação da doença e conquista mercados internacionais.</p>
             </div>
           </div>
         </div>
 
-        <!-- Botões de navegação -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-
-        <!-- Paginador (bolinhas) -->
         <div class="swiper-pagination"></div>
       </section>
     </section>
 
     <section class="economia-politica">
-      <h2>Economia e Política</h2>
+      <h2>Recentes</h2>
       <div class="noticia-veja-carousel-externa">
         <div class="noticia-veja-lista" id="economiaPoliticaCarouselLista">
-          <a href="#" class="noticia-veja-card">
-            <img src="assets/img/ataquesmarina.png" alt="Acre repudia ataques">
-            <span>27/05/25</span>
-            <strong>Autoridades do Acre repudiam ataques contra ministra Marina Silva em comissão no Senado</strong>
-            <p>Em nota, autoridades destacam que Marina Silva foi interrompida, desrespeitada e alvo de insinuações
-              ofensivas.</p>
-          </a>
-          <a href="#" class="noticia-veja-card">
-            <img src="assets/img/combustiveis.png" alt="Manaus combustíveis sustentáveis">
-            <span>29/05/25</span>
-            <strong>Manaus rumo aos combustíveis sustentáveis: Novo aterro impulsiona potencial da Amazônia</strong>
-            <p>Novo aterro em Manaus busca inserir a Amazônia na rota dos combustíveis sustentáveis.</p>
-          </a>
-          <a href="#" class="noticia-veja-card">
-            <img src="assets/img/plantacao.png" alt="Plano de carreira servidores">
-            <span>27/05/25</span>
-            <strong>Governo do RO atualiza plano de carreira da Sedam para valorizar servidores</strong>
-            <p>A lei moderniza o Plano de Carreira, Cargos e Remuneração (PCCR) dos servidores da Sedam, valorizando o
-              fortalecimento e atuação na área ambiental.</p>
-          </a>
+          <a href="meio-ambiente/Manaus-mais-de-300-areas-sem-agua-por-manutencao-eletrica.html" class="noticia-veja-card">
+          <img src="assets/img/faltaagua.png" alt="Interrupção de água em Manaus">
+          <span>03/06/25</span>
+          <strong>Mais de 300 áreas de Manaus sem água por manutenção elétrica</strong>
+          <p>Manutenção elétrica afeta estações de tratamento e interrompe abastecimento de água.</p>
+        </a>
+        <a href="meio-ambiente/Rio-invisivel-do-Amazonas-misterio-subterraneo-intriga-cientistas.html" class="noticia-veja-card">
+          <img src="assets/img/amazonia.png" alt="Bacia Amazônica e o rio invisível">
+          <span>30/05/25</span>
+          <strong>O "Rio Invisível" do Amazonas intriga cientistas</strong>
+          <p>Pesquisadores investigam fluxo de águas subterrâneas sob a Bacia Amazônica.</p>
+        </a>
+        <a href="recentes/Suspeito-de-atropelar-e-matar-assessora-juridica-no-AC-alega-nao-ter-visto-a-vitima-nova.html" class="noticia-veja-card">
+          <img src="assets/img/cidades.png" alt="Local do acidente em Rio Branco, AC">
+          <span>24/06/25</span>
+          <strong>Suspeito de atropelar e matar assessora jurídica no AC alega não ter visto a vítima</strong>
+          <p>Defesa afirma que suspeito não viu a vítima antes do impacto em Rio Branco.</p>
+        </a>
+        <a href="meio-ambiente/Oasis-escondido-no-Tocantins-fervedouros-do-Jalapao.html" class="noticia-veja-card">
+          <img src="assets/img/desafia.avif" alt="Fervedouros do Jalapão">
+          <span>15/06/25</span>
+          <strong>Oásis escondido no Tocantins: fervedouros do Jalapão</strong>
+          <p>Descubra as águas cristalinas e fenômenos naturais únicos do Jalapão.</p>
+        </a>
+        <a href="cultura/Acre-baixa-participacao-programa-rouanet-juventude.html" class="noticia-veja-card">
+          <img src="assets/img/projetosc.png" alt="Jovens">
+          <span>25/06/25</span>
+          <strong>Com 23 projetos habilitados, Acre é um dos estados com maior participação no programa Rouanet da Juventude</strong>
+          <p>Estado investe e colhe resultados para jovens das periferias com incentivo à cultura e educação.</p>
+        </a>
+        <a href="economia/Tocantins-destaque-mundial-combate-febre-aftosa.html" class="noticia-veja-card">
+          <img src="assets/img/economia.jpg" alt="Economia">
+          <span>25/06/25</span>
+          <strong>Tocantins é destaque mundial no combate à febre aftosa</strong>
+          <p>Estado se destaca na erradicação da doença e conquista mercados internacionais.</p>
+        </a>
+        <a href="economia/Justica-garante-passe-livre-estudantil-no-AM.html" class="noticia-veja-card">
+          <img src="assets/img/estudante.avif" alt="Passe livre estudantil AM">
+          <span>20/06/25</span>
+          <strong>Justiça garante passe livre estudantil no AM</strong>
+          <p>Decisão beneficia milhares de estudantes da rede pública do Amazonas.</p>
+        </a>
+        <a href="recentes/Motorista-denunciada-por-homicidio-culposo-apos-atropelamento-fatal-em-RR.html" class="noticia-veja-card">
+          <img src="assets/img/diegoluiz.avif" alt="Atropelamento fatal em RR">
+          <span>22/06/25</span>
+          <strong>Motorista denunciada por homicídio culposo após atropelamento fatal em RR</strong>
+          <p>Acidente em Boa Vista levanta debate sobre segurança no trânsito.</p>
+        </a>
         </div>
         <div class="noticia-veja-carousel-btns">
           <button class="noticia-veja-carousel-btn-rect left" id="economiaPoliticaCarouselLeft">&#8592;</button>
@@ -258,12 +274,12 @@
         <h4>Navegação</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Cidades</a></li>
-          <li><a href="#">Cultura</a></li>
-          <li><a href="#">Meio Ambiente</a></li>
-          <li><a href="#">Economia e Política</a></li>
-          <li><a href="#">Notícias Recentes</a></li>
-          <li><a href="#">Previsão do tempo</a></li>
+          <li><a href="cultura.html">Cultura</a></li>
+          <li><a href="meio-ambiente.html">Meio Ambiente</a></li>
+          <li><a href="economia.html">Economia e Política</a></li>
+          <li><a href="recentes.html">Notícias Recentes</a></li>
+          <li><a href="#previsaoTempo">Previsão do tempo</a></li>
+          <li><a href="#conversorMoedas">Conversor de moeda</a></li>
         </ul>
       </div>
       <div class="footer-col">

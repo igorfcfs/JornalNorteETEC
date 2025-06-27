@@ -27,6 +27,8 @@
   --verde-hover: #6a7c4f;
   --verde-escuro: #2d3a2e;
   --verde-hover-noticia: #4e5d36;
+
+  --espaco-secao: 100px;
 }
 
 body {
@@ -88,6 +90,34 @@ main {
   max-width: 1200px;
   margin: 32px auto 0 auto;
   padding: 0 20px 40px 20px;
+}
+.noticias-recentes {
+  margin-top: 10px
+}
+main > section,
+main > .noticias-recentes,
+main > .categorias,
+main > .noticias-recentes-lista,
+main > .noticia-banner,
+main > .economia-politica,
+main > .conversor,
+main > .previsao-tempo {
+  margin-top: var(--espaco-secao);
+  margin-bottom: var(--espaco-secao);
+}
+
+@media (max-width: 900px) {
+  main > section,
+  main > .noticias-recentes,
+  main > .categorias,
+  main > .noticias-recentes-lista,
+  main > .noticia-banner,
+  main > .economia-politica,
+  main > .conversor,
+  main > .previsao-tempo {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
 }
 
 .noticias-recentes h1 {
@@ -232,7 +262,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  ;
   gap: 22px;
   margin-bottom: 8px;
 }
@@ -354,21 +383,18 @@ main {
 }
 
 .noticia-grande {
-  flex: 1;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('assets/img/desafia.avif') center/cover no-repeat; 
+  min-height: 220px; 
+  max-height: 600px; 
+  display: flex; 
+  align-items: flex-end; 
+  border-radius: 18px; 
+  overflow: hidden; 
   position: relative;
-  border-radius: 12px;
-  overflow: hidden;
+  flex: 1;
   box-shadow: 0 2px 12px #0001;
-  background: var(--branco);
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.noticia-grande img {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
 }
 
 .noticia-grande-info {
@@ -610,7 +636,6 @@ main {
   padding: 28px 24px;
   align-items: flex-start;
   box-shadow: 0 1px 6px #0001;
-  margin-bottom: 36px;
 }
 
 .cidade-info {
@@ -783,7 +808,7 @@ main {
 .economia-politica,
 .conversor,
 .previsao-tempo {
-  margin-top: 80px;
+  margin-top: 20px;
   margin-bottom: 32px;
 }
 
